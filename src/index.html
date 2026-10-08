@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 
+    Main Homepage – Credit & Loan Data Visualization Hub
+    This page provides navigation to all the visual analysis pages.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit & Loan Visualization Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Credit & Loan Data: A Visual Exploration</h1>
+        <p>
+            Interactive visualizations analyzing credit scores, income levels, loan amounts,
+            and approval decisions using multiple chart types from your loan approval dataset.
+        </p>
+    </header>
+
+    <!-- Main Navigation Cards -->
+    <main class="card-container">
+
+        <!-- Scatter & Bubble Plots -->
+        <a href="scatter_plots.html" class="card">
+            <h2>Scatter & Bubble Plots</h2>
+            <p>
+            Ploting the scatterplots using x-y encoding how income and credit score and loan amount (bubble size) relate to loan approval.
+            Both the original and optimized scatter views are also included so as to compare them better.    
+            </p>
+        </a>
+
+        <!-- Stacked & Grouped Bar Charts -->
+        <a href="bar_chart.html" class="card">
+            <h2>Stacked & Grouped Bar Charts</h2>
+            <p>
+                Examine how loan approvals Whether approved or rejected have been trending by the different income groups by displaying the contribution of various employment years groups within each income group in stacked and grouped bar charts.
+            </p>
+        </a>
+
+        <!-- Stacked Area Chart -->
+        <a href="area_chart.html" class="card">
+            <h2>Stacked Area Chart</h2>
+            <p>
+                As an connection with the relationship between total income, and credit-score ranges, each employmed years(experience) segment is overlaid to demonstrate the role of long-term work experience in overall income patterns.
+            </p>
+        </a>
+
+        <!-- Multi-Line & Comparative Line Charts -->
+        <a href="line_charts.html" class="card">
+            <h2>Line Charts</h2>
+            <p>
+                Tracking the average loan amount requested by the people across credit-score ranges.
+                The first chart shows extreme overplotting with individual years, while the optimized comparative chart reveals clearer patterns using grouped employment categories.
+            </p>
+        </a>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>CSCE 5320 – Assignment 09 • Credit & Loan Visualization Dashboard by Naga Sampath Maddineni</p>
+    </footer>
+
+</body>
+</html>
