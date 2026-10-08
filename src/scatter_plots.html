@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+    Scatter Plot Analysis Page
+    Displays comparative scatter/bubble plots showing relationships 
+    between credit score, income, and loan approval outcomes.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scatter Plot Analysis – Loan Approval</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-content">
+        <h1>Income, Credit Score, and Loan Approval</h1>
+
+        <!-- First chart: raw / cluttered scatter -->
+        <div class="chart-container">
+            <h2>Initial Scatter Plot: All Applicants</h2>
+            <!-- Example: x = Credit Score, y = Annual Income, color = Approval Status, size = Loan Amount -->
+            <img src="images/ScatterPlot_1.png" alt="Initial Scatter Plot of Loan Applicants">
+        </div>
+        <p class="analysis-text">
+            The bubble chart is designed to represent four attributes of the dataset with the help of x-y position, color, and size. Their financial capacity and creditworthiness are plotted through an x-axis of the income of every applicant and a y-axis of the credit-score of every applicant. The two groups under the loan_approved have been separated by color which enables us to compare the approved (true) and rejected (false) applications visually. The loan amount is the size of each bubble hence the applicant who applies in a large loan amount would be represented as a bigger circle. Combined, both encodings allow one to effortlessly view trends-such as approved loans at higher credit scores and tighter blue areas where rejections occur in a large concentration between low-mid credit ranges.
+        </p>
+        <!-- Second chart: optimized / filtered scatter -->
+        <div class="chart-container">
+            <h2>Optimized Scatter Plot (Filtered Applicants)</h2>
+            <!-- Example: filtered to loan_amount > threshold or credit_score > 600 -->
+            <img src="images/OptimizedScatterPlot_1.png" alt="Optimized Scatter Plot of Loan Applicants">
+        </div>
+
+        <p class="analysis-text">
+             To create the optimized version of the bubble chart, I maintained the same data encodings and spent attention on legibility and minimization of clutters. To begin with, I optimized axes: the x-axis is styled in the format of Income (USD) using thousand separators and the y-axis is limited to a realistic scale of credit scores, 300-900 which keep empty space to a minimum and simplifies the observation of vertical differences. I also narrowed the range of bubble size and provided semi-transparent circles with a thin black line; this is to ensure that the overlapping points can be seen without obscuring each other. I also made the color palette a cleaner two couple color scheme on the Loan Approved? groups and added gridlines to ease up about comparing positions. Lastly, I incorporated interactive legend with selection multi, meaning every time a user clicks on a group (approved or not approved), the former is highlighted whereas the latter is muted. The cleaner scales and styling of this interaction have made patterns composed of income, credit score, loan amount, and approval status far easier to interpret as compared to the original plot.
+        </p>
+
+        <div class="navigation-footer">
+            <a href="index.html" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
