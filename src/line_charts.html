@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+    Line Chart Analysis Page
+    Shows multi-line trends for loan amounts and approval rates by credit score and employment type.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Line Chart Analysis – Loan Trends</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-content">
+        <h1>Loan Amount Requested for different Credit Score Bands</h1>
+
+        <!-- First chart: cluttered with many groups -->
+        <div class="chart-container">
+            <h2>Chart 1: All Employed Year Types (Overplotting)</h2>
+            <!-- Example: average loan amount across credit score buckets for every employment type -->
+            <img src="images/ClutteredlineChart_1.png" alt="Cluttered Line Chart of All Employment Types">
+        </div>
+
+        <!-- Second chart: filtered to top groups -->
+        <div class="chart-container">
+            <h2>Chart 2: Comparative Chart of grouped Employed_years Types</h2>
+            <!-- Example: only Full-time, Part-time, Self-employed, and Unemployed -->
+            <img src="images/ComparitiveLineChart_1.png" alt="Comparative Line Chart of Selected Employment Types">
+        </div>
+
+        <p class="analysis-text">
+            The comparative line chart that breaks down years of employment into wider specific 5-year ranges offers a far clearer picture of the average loan amounts at the 3 ranges of credit scores. Despite the fluctuation of the lines, most of the employment groups remain in a similar span of loans (around 20000-30000) demonstrating that the loan size does not alter significantly with credit score only. There are even some peaks along the mid-range credit bins (e.g., 600-650), which implies that the applicants with a moderate credit can demand or be eligible to higher loaning sum. In difference, the normal multi line chart, which involves all personal years of employment, dramatically overplots, and it is hardly possible to discern any trend. The thick crowding together of dozens of lines conceals patterns and amplifies the accidental variations. On comparing the two charts, one can see that aggregation is critical since as the years of employment is clustered into meaningful groups, the noise is minimized and the overall relationships are observable, which demonstrates that the amounts of loans are relatively constant across credit scores but differ by a factor of a bit based on the employment experience and the type of credit.
+        </p>
+
+        <div class="navigation-footer">
+            <a href="index.html" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
